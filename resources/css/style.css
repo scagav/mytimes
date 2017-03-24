@@ -5,38 +5,53 @@ html{
 .header{
   font-family: Verdana;
   font-size: 14px;
+  background-color: white;
   font-weight: bold;
   position: fixed;
   display: flex;
   height: 80px;
   width: 100%;
   border-bottom: 1px solid black;
+  border-top: 1px solid black;
   align-items: center;
+  z-index: 1;
+  margin-top: 10;
 }
 
 .header li{
   list-style: none;
-  display: inline-block;
-  padding: 20px;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.container{
+  margin: 0 auto;
+  padding-top: 100px;
+  display: flex;
+  flex: auto;
+
 }
 
  .header h1{
    color: aquamarine;
    font-size: 14px;
  }
+ .main{
+   background-image: image("./resources/images/mainstory.png");
+ }
 
- .column.large {
+ .container .main {
    width: 630px;
+   display: inline-block;
  }
 
- .column.medium {
+ .container .sidestory {
+   background-image: image("./resources/images/hipster.png");
    width: 300px;
+    display: inline-block;
  }
 
- .column.small {
+ .container .newsbites {
    width: 240px;
- }
-
- .container{
-   padding-top: 100px;
+    display: inline-block;
  }
